@@ -28,9 +28,9 @@ hs_err_pid*
 
 *.iml
 modules.xml
-.idea/misc.xml
 
-.idea/*
+
+.idea
 
 # User-specific stuff:
 .idea/**/workspace.xml
@@ -58,7 +58,7 @@ modules.xml
 ## Plugin-specific files:
 
 # IntelliJ
-/target/*
+/target
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
