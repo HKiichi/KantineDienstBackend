@@ -1,7 +1,6 @@
-package com.DienstBackend.files.service;
+package com.DienstBackend.service;
 
-import com.DienstBackend.files.domain.Person;
-import org.springframework.stereotype.Service;
+import com.DienstBackend.domain.Person;
 
 import java.util.List;
 

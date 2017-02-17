@@ -1,9 +1,7 @@
-package com.DienstBackend.files.dao;
+package com.DienstBackend.dao;
 
-import com.DienstBackend.files.domain.Shift;
+import com.DienstBackend.domain.Shift;
 import org.springframework.data.repository.CrudRepository;
-
-import java.util.Date;
 
 /**
  * Created by iris on 21-11-16.

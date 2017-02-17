@@ -1,6 +1,4 @@
-package com.DienstBackend.files.domain;
-
-import com.fasterxml.jackson.annotation.JsonIgnore;
+package com.DienstBackend.domain;
 
 import javax.persistence.*;
 import java.util.List;

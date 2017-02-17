@@ -1,11 +1,9 @@
-package com.DienstBackend.files.service;
+package com.DienstBackend.service;
 
-import com.DienstBackend.files.dao.ShiftDao;
-import com.DienstBackend.files.domain.Shift;
+import com.DienstBackend.dao.ShiftDao;
+import com.DienstBackend.domain.Shift;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.Date;
 
 /**
  * Created by ikikuchi on 11-1-2017.

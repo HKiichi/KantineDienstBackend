@@ -1,7 +1,7 @@
-package com.DienstBackend.files.controllers;
+package com.DienstBackend.controllers;
 
-import com.DienstBackend.files.domain.Shift;
-import com.DienstBackend.files.service.ShiftService;
+import com.DienstBackend.domain.Shift;
+import com.DienstBackend.service.ShiftService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

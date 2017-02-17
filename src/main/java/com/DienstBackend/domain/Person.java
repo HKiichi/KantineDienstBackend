@@ -1,4 +1,4 @@
-package com.DienstBackend.files.domain;
+package com.DienstBackend.domain;
 
 import javax.persistence.*;
 import java.util.List;

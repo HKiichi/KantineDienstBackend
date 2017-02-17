@@ -1,6 +1,6 @@
-package com.DienstBackend.files.dao;
+package com.DienstBackend.dao;
 
-import com.DienstBackend.files.domain.Person;
+import com.DienstBackend.domain.Person;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;

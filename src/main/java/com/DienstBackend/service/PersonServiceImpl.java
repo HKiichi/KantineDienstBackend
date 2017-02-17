@@ -1,7 +1,7 @@
-package com.DienstBackend.files.service;
+package com.DienstBackend.service;
 
-import com.DienstBackend.files.dao.PersonDao;
-import com.DienstBackend.files.domain.Person;
+import com.DienstBackend.dao.PersonDao;
+import com.DienstBackend.domain.Person;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

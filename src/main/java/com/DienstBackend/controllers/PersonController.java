@@ -1,8 +1,7 @@
-package com.DienstBackend.files.controllers;
+package com.DienstBackend.controllers;
 
-import com.DienstBackend.files.domain.Person;
-import com.DienstBackend.files.service.PersonService;
-import com.DienstBackend.files.service.PersonServiceImpl;
+import com.DienstBackend.domain.Person;
+import com.DienstBackend.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

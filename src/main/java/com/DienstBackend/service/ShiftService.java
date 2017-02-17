@@ -1,8 +1,6 @@
-package com.DienstBackend.files.service;
+package com.DienstBackend.service;
 
-import com.DienstBackend.files.domain.Shift;
-
-import java.util.Date;
+import com.DienstBackend.domain.Shift;
 
 /**
  * Created by ikikuchi on 11-1-2017.

@@ -1,16 +1,11 @@
-package com.DienstBackend.files.controllers;
+package com.DienstBackend.controllers;
 
-import com.DienstBackend.files.domain.Person;
-import com.DienstBackend.files.service.PersonService;
+import com.DienstBackend.domain.Person;
+import com.DienstBackend.service.PersonService;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
-import javax.servlet.ServletException;
-import java.security.Principal;
-import java.util.Date;
 import java.util.List;
 
 /**

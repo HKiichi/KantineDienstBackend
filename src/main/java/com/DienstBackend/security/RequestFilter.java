@@ -1,4 +1,4 @@
-package com.DienstBackend.files.security;
+package com.DienstBackend.security;
 
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
