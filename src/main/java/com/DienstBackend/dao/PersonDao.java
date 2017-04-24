@@ -11,4 +11,6 @@ import java.util.List;
 public interface PersonDao extends CrudRepository<Person, Long> {
     Person findByUsername(String username);
     List<Person> findAll();
-}
+
+
+   }

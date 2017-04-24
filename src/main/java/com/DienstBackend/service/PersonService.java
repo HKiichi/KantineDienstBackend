@@ -15,7 +15,9 @@ public interface PersonService {
 
     Person createPerson(Person person);
 
-    Person savePerson(Person person);
+ /*   void savePerson(Person person);*/
 
     List<Person> findPersonList();
+
+    List<String> findPersonUsernameList();
 }

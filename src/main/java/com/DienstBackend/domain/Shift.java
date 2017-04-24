@@ -26,10 +26,14 @@ public class Shift {
     public Shift(){
     }
 
-    public Shift(String date, String time){
+  /*  public Shift(String date, String time){
         this.date = date;
         this.time = time;
-    }
+    }*/
+
+  public Shift(String date){
+      this.date =date;
+  }
 
     @ManyToMany
     @JsonIgnore

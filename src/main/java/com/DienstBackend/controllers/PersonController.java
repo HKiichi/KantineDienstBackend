@@ -23,7 +23,7 @@ public class PersonController {
     PersonService personService;
 
     @RequestMapping(value = "/profile", method = RequestMethod.GET)
-    public String profile(Principal principal, Model model){
+    public String profile(Principal principal, Model model) {
         Person person = personService.findByUsername(principal.getName());
 
         model.addAttribute("person", person);
@@ -32,12 +32,12 @@ public class PersonController {
     }
 
     @RequestMapping(value = "/profile", method = RequestMethod.POST)
-    public String profilePost(@ModelAttribute("person") Person newPerson, Model model){
-       Person person = personService.findByUsername(newPerson.getUsername());
+    public String profilePost(@ModelAttribute("person") Person newPerson, Model model) {
+        Person person = personService.findByUsername(newPerson.getUsername());
         person.setUsername(newPerson.getUsername());
 
-        model.addAttribute("person", person);
-        personService.savePerson(person);
+       /* model.addAttribute("person", person);
+        personService.savePerson(person);*/
 
         return "profile";
     }

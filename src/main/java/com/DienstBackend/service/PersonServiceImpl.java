@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * Created by iris on 23-11-16.
@@ -30,11 +31,15 @@ public class PersonServiceImpl implements PersonService{
         return localPerson;
     }
 
-    public Person savePerson(Person person){
-        return personDao.save(person);
-    }
+   /* public void savePerson(Person person){
+        personDao.savePerson(person);
+    }*/
 
     public List<Person> findPersonList(){
         return personDao.findAll();
+    }
+
+    public List<String> findPersonUsernameList(){
+        return personDao.findAll().stream().map(person ->person.getUsername()).collect(Collectors.toList());
     }
 }

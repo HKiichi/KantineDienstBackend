@@ -16,32 +16,34 @@ public class HomeController {
 
     @Autowired
     PersonService personService;
-  //  Person person;
+    //  Person person;
 
     @RequestMapping("/")
-    public  String home(){
+    public String home() {
         return "index";
     }
 
     @RequestMapping("/logout")
-    public  String logout() {
+    public String logout() {
         return "logout";
     }
 
-    @RequestMapping(value = "/signup", method = RequestMethod.POST, produces = { "application/json" })
-        public Person signupPost(@RequestBody Person person){
+    @RequestMapping(value = "/signup", method = RequestMethod.POST, produces = {"application/json"})
+    public Person signupPost(@RequestBody Person person) {
 
         //Person person = new Person(firstName, lastName, email,username, password);
         //model.addAttribute("person", person);
+        // System.out.println(person.toString());
         personService.save(person);
-        System.out.println(person.getEmail());
+
+        System.out.println(person.getFirstName());
         return person;
     }
 
-    @RequestMapping(value= "/signup", method = RequestMethod.GET)
-    public List<Person> signup(){
+    @RequestMapping(value = "/signup", method = RequestMethod.GET)
+    public List<String> signup() {
 
-        return personService.findPersonList();
+        return personService.findPersonUsernameList();
     }
 
    /* @RequestMapping(value = "/login", method = RequestMethod.POST)
